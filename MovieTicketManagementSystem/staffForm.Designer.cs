@@ -61,15 +61,17 @@ namespace MovieTicketManagementSystem
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(255, 798);
+            this.panel1.Size = new System.Drawing.Size(340, 982);
             this.panel1.TabIndex = 1;
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(255, 44);
+            this.panel3.Location = new System.Drawing.Point(340, 54);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 100);
+            this.panel3.Size = new System.Drawing.Size(267, 123);
             this.panel3.TabIndex = 0;
             // 
             // button1
@@ -81,9 +83,10 @@ namespace MovieTicketManagementSystem
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::MovieTicketManagementSystem.Properties.Resources.icons8_ticket_30px;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(13, 285);
+            this.button1.Location = new System.Drawing.Point(17, 351);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(218, 46);
+            this.button1.Size = new System.Drawing.Size(291, 57);
             this.button1.TabIndex = 6;
             this.button1.Text = "BUY TICKET";
             this.button1.UseVisualStyleBackColor = false;
@@ -98,9 +101,10 @@ namespace MovieTicketManagementSystem
             this.logout_btn.ForeColor = System.Drawing.Color.White;
             this.logout_btn.Image = global::MovieTicketManagementSystem.Properties.Resources.icons8_logout_rounded_up_30px;
             this.logout_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.logout_btn.Location = new System.Drawing.Point(13, 721);
+            this.logout_btn.Location = new System.Drawing.Point(17, 887);
+            this.logout_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logout_btn.Name = "logout_btn";
-            this.logout_btn.Size = new System.Drawing.Size(218, 46);
+            this.logout_btn.Size = new System.Drawing.Size(291, 57);
             this.logout_btn.TabIndex = 5;
             this.logout_btn.Text = "LOGOUT";
             this.logout_btn.UseVisualStyleBackColor = false;
@@ -115,9 +119,10 @@ namespace MovieTicketManagementSystem
             this.dashboard_btn.ForeColor = System.Drawing.Color.White;
             this.dashboard_btn.Image = global::MovieTicketManagementSystem.Properties.Resources.icons8_dashboard_30px;
             this.dashboard_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dashboard_btn.Location = new System.Drawing.Point(13, 211);
+            this.dashboard_btn.Location = new System.Drawing.Point(17, 260);
+            this.dashboard_btn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dashboard_btn.Name = "dashboard_btn";
-            this.dashboard_btn.Size = new System.Drawing.Size(218, 46);
+            this.dashboard_btn.Size = new System.Drawing.Size(291, 57);
             this.dashboard_btn.TabIndex = 1;
             this.dashboard_btn.Text = "DASHBOARD";
             this.dashboard_btn.UseVisualStyleBackColor = false;
@@ -126,9 +131,10 @@ namespace MovieTicketManagementSystem
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MovieTicketManagementSystem.Properties.Resources.icons8_movie_projector_100px;
-            this.pictureBox1.Location = new System.Drawing.Point(66, 44);
+            this.pictureBox1.Location = new System.Drawing.Point(88, 54);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.Size = new System.Drawing.Size(133, 123);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -136,9 +142,10 @@ namespace MovieTicketManagementSystem
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1038, 11);
+            this.label1.Location = new System.Drawing.Point(1384, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 17);
+            this.label1.Size = new System.Drawing.Size(21, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "X";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -147,9 +154,10 @@ namespace MovieTicketManagementSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 14);
+            this.label2.Location = new System.Drawing.Point(8, 17);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(226, 15);
+            this.label2.Size = new System.Drawing.Size(287, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Movie Ticket Management System";
             // 
@@ -157,18 +165,20 @@ namespace MovieTicketManagementSystem
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(791, 16);
+            this.label3.Location = new System.Drawing.Point(1055, 20);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 15);
+            this.label3.Size = new System.Drawing.Size(130, 20);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Welcome, MarcoMan";
+            this.label3.Text = "Welcome, user";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::MovieTicketManagementSystem.Properties.Resources.icons8_User_30px;
-            this.pictureBox2.Location = new System.Drawing.Point(755, 8);
+            this.pictureBox2.Location = new System.Drawing.Point(1007, 10);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.Size = new System.Drawing.Size(40, 37);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
@@ -180,9 +190,10 @@ namespace MovieTicketManagementSystem
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(255, 0);
+            this.panel2.Location = new System.Drawing.Point(340, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1064, 44);
+            this.panel2.Size = new System.Drawing.Size(1419, 54);
             this.panel2.TabIndex = 2;
             // 
             // panel4
@@ -190,43 +201,47 @@ namespace MovieTicketManagementSystem
             this.panel4.Controls.Add(this.dashboardForm1);
             this.panel4.Controls.Add(this.buyTicketForm2);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(255, 44);
+            this.panel4.Location = new System.Drawing.Point(340, 54);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1064, 754);
+            this.panel4.Size = new System.Drawing.Size(1419, 928);
             this.panel4.TabIndex = 3;
             // 
             // dashboardForm1
             // 
             this.dashboardForm1.Location = new System.Drawing.Point(0, 0);
+            this.dashboardForm1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dashboardForm1.Name = "dashboardForm1";
-            this.dashboardForm1.Size = new System.Drawing.Size(1064, 754);
+            this.dashboardForm1.Size = new System.Drawing.Size(1419, 928);
             this.dashboardForm1.TabIndex = 1;
             // 
             // buyTicketForm2
             // 
             this.buyTicketForm2.Location = new System.Drawing.Point(0, 0);
+            this.buyTicketForm2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.buyTicketForm2.Name = "buyTicketForm2";
-            this.buyTicketForm2.Size = new System.Drawing.Size(1064, 754);
+            this.buyTicketForm2.Size = new System.Drawing.Size(1419, 928);
             this.buyTicketForm2.TabIndex = 0;
             // 
             // buyTicketForm1
             // 
             this.buyTicketForm1.Location = new System.Drawing.Point(0, 0);
+            this.buyTicketForm1.Margin = new System.Windows.Forms.Padding(4);
             this.buyTicketForm1.Name = "buyTicketForm1";
             this.buyTicketForm1.Size = new System.Drawing.Size(1064, 754);
             this.buyTicketForm1.TabIndex = 0;
             // 
             // staffForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1319, 798);
+            this.ClientSize = new System.Drawing.Size(1759, 982);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "staffForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "staffForm";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
