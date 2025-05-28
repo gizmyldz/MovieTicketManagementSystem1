@@ -125,5 +125,11 @@ namespace MovieTicketManagementSystem
         {
 
         }
+
+        private void btnTotalMovies_Click(object sender, EventArgs e)
+        {
+            var totalForm = new TotalMoviesFormcs();
+            totalForm.ShowDialog();
+        }
     }
 }

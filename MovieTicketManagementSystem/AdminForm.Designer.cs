@@ -35,10 +35,10 @@ namespace MovieTicketManagementSystem
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.hall1 = new MovieTicketManagementSystem.hall();
             this.dashboardForm1 = new MovieTicketManagementSystem.dashboardForm();
             this.addStaffsForm1 = new MovieTicketManagementSystem.AddStaffsForm();
             this.addMovieForm1 = new MovieTicketManagementSystem.AddMovieForm();
+            this.hall1 = new MovieTicketManagementSystem.hall();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonHALL = new System.Windows.Forms.Button();
@@ -47,6 +47,7 @@ namespace MovieTicketManagementSystem
             this.addStaff_btn = new System.Windows.Forms.Button();
             this.dashboard_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnTotalMovies = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
@@ -126,13 +127,6 @@ namespace MovieTicketManagementSystem
             this.panel3.Size = new System.Drawing.Size(1419, 928);
             this.panel3.TabIndex = 2;
             // 
-            // hall1
-            // 
-            this.hall1.Location = new System.Drawing.Point(0, 0);
-            this.hall1.Name = "hall1";
-            this.hall1.Size = new System.Drawing.Size(1419, 928);
-            this.hall1.TabIndex = 3;
-            // 
             // dashboardForm1
             // 
             this.dashboardForm1.Location = new System.Drawing.Point(0, 0);
@@ -160,9 +154,17 @@ namespace MovieTicketManagementSystem
             this.addMovieForm1.TabIndex = 0;
             this.addMovieForm1.Load += new System.EventHandler(this.addMovieForm1_Load);
             // 
+            // hall1
+            // 
+            this.hall1.Location = new System.Drawing.Point(0, 0);
+            this.hall1.Name = "hall1";
+            this.hall1.Size = new System.Drawing.Size(1419, 928);
+            this.hall1.TabIndex = 3;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(19)))), ((int)(((byte)(33)))));
+            this.panel1.Controls.Add(this.btnTotalMovies);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.buttonHALL);
             this.panel1.Controls.Add(this.logout_btn);
@@ -187,7 +189,7 @@ namespace MovieTicketManagementSystem
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::MovieTicketManagementSystem.Properties.Resources.icons8_movie_30px;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(13, 527);
+            this.button1.Location = new System.Drawing.Point(17, 527);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(291, 57);
@@ -285,6 +287,24 @@ namespace MovieTicketManagementSystem
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnTotalMovies
+            // 
+            this.btnTotalMovies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(19)))), ((int)(((byte)(33)))));
+            this.btnTotalMovies.FlatAppearance.BorderSize = 0;
+            this.btnTotalMovies.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTotalMovies.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTotalMovies.ForeColor = System.Drawing.Color.White;
+            this.btnTotalMovies.Image = global::MovieTicketManagementSystem.Properties.Resources.icons8_movie_30px;
+            this.btnTotalMovies.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTotalMovies.Location = new System.Drawing.Point(17, 608);
+            this.btnTotalMovies.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTotalMovies.Name = "btnTotalMovies";
+            this.btnTotalMovies.Size = new System.Drawing.Size(291, 57);
+            this.btnTotalMovies.TabIndex = 7;
+            this.btnTotalMovies.Text = "TOTAL MOVIES";
+            this.btnTotalMovies.UseVisualStyleBackColor = false;
+            this.btnTotalMovies.Click += new System.EventHandler(this.btnTotalMovies_Click);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -296,7 +316,6 @@ namespace MovieTicketManagementSystem
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminForm";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -327,5 +346,6 @@ namespace MovieTicketManagementSystem
         private System.Windows.Forms.Button buttonHALL;
         private System.Windows.Forms.Button button1;
         private hall hall1;
+        private System.Windows.Forms.Button btnTotalMovies;
     }
 }

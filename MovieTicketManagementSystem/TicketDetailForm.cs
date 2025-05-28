@@ -29,7 +29,7 @@ namespace MovieTicketManagementSystem
                 lblkoltuk.Text = string.Join(", ", koltuklar);
                 
 
-        }
+            }
         
 
 

@@ -88,6 +88,8 @@ namespace MovieTicketManagementSystem
             Listele();
         }
 
+
+        /*
         private void buttonDelete_Click_1(object sender, EventArgs e)
         {
 
@@ -119,11 +121,91 @@ namespace MovieTicketManagementSystem
                 numericUpDown1.Value = 0;
             }
         }
+        */
 
-      
 
-       
-      
+
+
+
+        private void buttonDelete_Click_1(object sender, EventArgs e)
+        {
+            if (selectedID == 0)
+            {
+                MessageBox.Show("Please pick a hall.");
+                return;
+            }
+
+            var result = MessageBox.Show(
+                "Are you sure you want to delete this hall?",
+                "Accept",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (result != DialogResult.Yes)
+                return;
+
+            using (var con = new SqlConnection(conn))
+            {
+                con.Open();
+                using (var tx = con.BeginTransaction())
+                {
+                    try
+                    {
+                        // 1) İlgili seanslardaki koltuk durumlarını sil (eğer bu tablonuz varsa)
+                        using (var cmd = new SqlCommand(@"
+                    DELETE ss
+                    FROM SeatStatus ss
+                    INNER JOIN Seanslar s
+                      ON ss.SeansID = s.SeansID
+                    WHERE s.SalonID = @id
+                ", con, tx))
+                        {
+                            cmd.Parameters.AddWithValue("@id", selectedID);
+                            cmd.ExecuteNonQuery();
+                        }
+
+                        // 2) Seanslar tablosundan sil
+                        using (var cmd = new SqlCommand(@"
+                    DELETE FROM Seanslar
+                    WHERE SalonID = @id
+                ", con, tx))
+                        {
+                            cmd.Parameters.AddWithValue("@id", selectedID);
+                            cmd.ExecuteNonQuery();
+                        }
+
+                        // 3) Son olarak Salons tablosundan sil
+                        using (var cmd = new SqlCommand(@"
+                    DELETE FROM Salons
+                    WHERE SalonID = @id
+                ", con, tx))
+                        {
+                            cmd.Parameters.AddWithValue("@id", selectedID);
+                            cmd.ExecuteNonQuery();
+                        }
+
+                        tx.Commit();
+                        MessageBox.Show("Hall and its related sessions have been deleted.");
+                    }
+                    catch (Exception ex)
+                    {
+                        tx.Rollback();
+                        MessageBox.Show("Delete failed: " + ex.Message);
+                    }
+                }
+            }
+
+            // Listeyi yenileyin
+            Listele();
+            selectedID = 0;
+            textBoxHall.Clear();
+            numericUpDown1.Value = 0;
+        }
+
+
+
+
+
         private void hall_Load(object sender, EventArgs e)
         {
             Listele();

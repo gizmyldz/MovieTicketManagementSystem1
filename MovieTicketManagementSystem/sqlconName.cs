@@ -13,7 +13,7 @@ namespace MovieTicketManagementSystem
     {
         public SqlConnection connection()
         {
-            SqlConnection connection = new SqlConnection("Data Source=LAPTOP-PM5A38PG\\SQLEXPRESS;Initial Catalog=movie;Integrated Security=True;");
+            SqlConnection connection = new SqlConnection("Data Source=DESKTOP-QKMG9KF\\SQLEXPRESS;Initial Catalog=movie;Integrated Security=True;");
             connection.Open();
             return connection;
     }
