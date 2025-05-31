@@ -11,7 +11,7 @@
 <ol>
   <li>Projeyi Visual Studio ile açın.</li>
   <li>SQL Server'da veritabanını oluşturmak için <code>script.sql</code> scriptini çalıştırın.</li>
-  <li><code>app.config</code> dosyasındaki bağlantı dizesini ve formalrdaki string conn dizesini kendi SQL Server bağlantınızla güncelleyin.</li>
+  <li><code>app.config</code> dosyasındaki bağlantı dizesini ve formlardaki string conn dizesini kendi SQL Server bağlantınızla güncelleyin.</li>
 </ol>
 
 <h2>Kullanım</h2>
