@@ -603,7 +603,7 @@ namespace MovieTicketManagementSystem
             {
                 selectedSalonId = Convert.ToInt32(dataGridView1.CurrentRow.Cells["SalonID"].Value);
 
-                // ✅ Seçilen seansı al
+                //  Seçilen seansı al
                 if (buyTicket_seansComboBox.SelectedValue == null)
                 {
                     MessageBox.Show("Lütfen bir seans seçin.");
@@ -612,7 +612,7 @@ namespace MovieTicketManagementSystem
 
                 int selectedSeansId = Convert.ToInt32(buyTicket_seansComboBox.SelectedValue);
 
-                // ✅ Seat formuna hem salon hem seans bilgisini gönder
+                //  Seat formuna hem salon hem seans bilgisini gönder
                 Seat seatForm = new Seat(selectedSalonId, selectedSeansId);
                 var result = seatForm.ShowDialog();
 
